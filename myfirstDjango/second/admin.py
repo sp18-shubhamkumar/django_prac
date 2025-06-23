@@ -11,7 +11,7 @@ class secondVariety(admin.ModelAdmin):
 
 class storeadmin(admin.ModelAdmin):
     list_display=('name','location')
-    # filter_horizontal=('second_variety',)
+    filter_horizontal=('second_variety',)
 
 class secondCertificateAdmin(admin.ModelAdmin):
     list_display=('second','certificate_number')
